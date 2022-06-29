@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azkaprint</title>
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- logo icon -->
+    <link rel="icon" href="assets/images/AZKA PRINT.png">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="drop-shadow-lg bg-opacity-20 text-opacity-100 fixed top-0 left-0 w-full z-50">
+        <div class=" bg-blue-600 w-full lg:h-14 lg:flex lg:flex-row  text-white z-20  p-3">
+            <div class="flex">
+                <a href="" class="text-decoration-none flex text-3xl lg:ml-20"> Azkaprint</a>
+            </div>
+            <div id="toggle" class="absolute -mt-8 ml-[330px] ">
+                <span id="offbar" class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </span>
+                <span id="onbar" class="lg:hidden hidden text-2xl">
+                <i class="fa-solid fa-xmark" onclick="openmenu()"></i>
+              </span>
+            </div>
+            <div id="navbar" class="hidden transition-all duration-700 ease-in-out lg:flex lg:flex-row py-1 px-3 lg:ml-[700px] lg:-mt-4 mt-3">
+                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
+                    <a class="active:font-bold active:underline text-xl" href="#home">Home</a>
+                </div>
+                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
+                    <a class="active:font-bold active:underline text-xl" href="#product">Product</a>
+                </div>
+                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
+                    <a class="active:font-bold active:underline text-xl" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- -mt-[330px] ml-[330px] -->
+    <!-- End Navbar -->
+
+
+    <!-- Section Hero -->
+
+    <section id="about" class="w-full h-screen bg-cover" style="background-image: url('assets/images/bg-hero.jpg');">
+        <div class="container grid grid-cols-4">
+            <div class="ml-[150px] col-span-2 mt-[230px]">
+                <div class="pb-8">
+                    <h1 class=" text-[60px] font-bold">Azkaprint</h1>
+                    <p class="w-[600px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel eligendi soluta amet accusantium odio. Neque delectus praesentium quos, repellat consequuntur dolorum quod ipsum eum modi nesciunt earum porro dolorem distinctio.</p>
+                </div>
+                <a class="bg-blue-500 text-white text-md py-2 px-8 rounded-md cursor-pointer">
+                  Jelajahi
+                </a>
+            </div>
+            <div class="ml-[220px] mt-[200px] w-full h-full">
+                <img src="assets/images/AZKAPRINT STAMP.png" height="400" class="" alt="logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Hero -->
+
+    <!-- Jaminan -->
+
+    <section class=" w-full pb-10 mt-20">
+        <div class="grid gap-3 grid-cols-3 justify-items-center">
+            <div class="border border-gray-100 hover:skew-y-3 duration-300   drop-shadow-xl text-center w-[350px] h-[400px] p-10">
+                <div class="">
+                    <span class="text-[90px] text-blue-500">
+                      <i class="fa-solid fa-comments"></i>
+                </span>
+                </div>
+                <div class="text-semibold text-2xl pb-5">
+                    <h2>Terjangkau</h2>
+                </div>
+                <div class="text-center">
+                    Anda bisa memesan tanpa harus datang ke kantor kami
+                </div>
+            </div>
+            <div class="border border-gray-100 hover:skew-y-3 duration-300  drop-shadow-xl w-[350px] text-center h-[400px] p-10">
+                <div class="">
+                    <span class="text-[90px] text-blue-500">
+                      <i class="fa-solid fa-building-shield"></i>
+                </span>
+                </div>
+                <div class="text-semibold text-2xl pb-5">
+                    <h2>Terpercaya</h2>
+                </div>
+                <div class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+            <div class="border border-gray-100 hover:skew-y-3 duration-300  drop-shadow-xl w-[350px] text-center h-[400px] p-10">
+                <div class="">
+                    <span class="text-[90px] text-blue-500">
+                  <i class="fa-solid fa-pencil"></i>
+                </span>
+                </div>
+                <div class="text-semibold text-2xl pb-5">
+                    <h2>Design Grafis</h2>
+                </div>
+                <div class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Jaminan -->
+
+
+    <!-- About -->
+
+    <section id="product" class="w-full h-screen p-5 pt-20 bg-blue-200">
+        <div class="text-center ">
+            <h1 class="text-4xl font-bold">Product</h1>
+            <div class="grid grid-cols-3 justify-items-center mt-8">
+                <div class=" w-[350px] pb-3 drop-shadow-xl">
+                    <img class="rounded-md" src="assets/images/product/undangan.jpg" alt="">
+                </div>
+                <div class=" w-[350px] pb-3 drop-shadow-xl">
+                    <img class="rounded-md" src="assets/images/product/STEMPEL BULAT.jpg" alt="">
+                </div>
+                <div class=" w-[350px] pb-3 drop-shadow-xl">
+                    <img class="rounded-md" src="assets/images/product/XBANNER.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End About -->
+
+
+
+    <script>
+        function openmenu() {
+            document.getElementById('navbar').classList.toggle('hidden')
+        }
+    </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
