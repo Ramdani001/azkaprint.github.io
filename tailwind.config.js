@@ -10,8 +10,7 @@ module.exports = {
       jump: {
         '0%, 100%': { transform: 'translateY(-5%); '},
         '50%':  { transform: 'translateY(0);'},
-
-      }
+      },
     } ,
   },
   plugins: [],
