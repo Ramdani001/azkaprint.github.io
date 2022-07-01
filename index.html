@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,12 @@
     <!-- logo icon -->
     <link rel="icon" href="assets/images/AZKA PRINT.png">
 
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body id="home">
 
     <!-- Navbar -->
 
@@ -63,8 +66,8 @@
                   Jelajahi
                 </a>
             </div>
-            <div class="ml-[220px] mt-[200px] w-full h-full">
-                <img src="assets/images/AZKAPRINT STAMP.png" height="400" class="" alt="logo">
+            <div class="ml-[220px] mt-[200px] w-full h-full" data-aos="fade-left" data-aos-duration="2000">
+                <img src="assets/images/AZKAPRINT STAMP.png" height="400" class="animate-jump" alt="logo">
             </div>
         </div>
     </section>
@@ -75,7 +78,7 @@
 
     <section class=" w-full pb-10 mt-20">
         <div class="grid gap-3 grid-cols-3 justify-items-center">
-            <div class="border border-gray-100 hover:skew-y-3 duration-300   drop-shadow-xl text-center w-[350px] h-[400px] p-10">
+            <div data-aos="flip-left" data-aos-duration="1000" class="border border-gray-100 hover:skew-y-3 duration-300   drop-shadow-xl text-center w-[350px] h-[400px] p-10">
                 <div class="">
                     <span class="text-[90px] text-blue-500">
                       <i class="fa-solid fa-comments"></i>
@@ -120,19 +123,19 @@
     <!-- End Jaminan -->
 
 
-    <!-- About -->
+    <!-- Product -->
 
     <section id="product" class="w-full h-screen p-5 pt-20 bg-blue-200">
         <div class="text-center ">
             <h1 class="text-4xl font-bold">Product</h1>
             <div class="grid grid-cols-3 justify-items-center mt-8">
                 <div class=" w-[350px] pb-3 drop-shadow-xl">
-                    <img class="rounded-md" src="assets/images/product/undangan.jpg" alt="">
+                    <img class="rounded-md" src="assets/images/product/undangan.jpg" data-aos="flip-left" data-aos-duration="1000" alt="">
                 </div>
-                <div class=" w-[350px] pb-3 drop-shadow-xl">
+                <div class=" w-[350px] pb-3 drop-shadow-xl" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
                     <img class="rounded-md" src="assets/images/product/STEMPEL BULAT.jpg" alt="">
                 </div>
-                <div class=" w-[350px] pb-3 drop-shadow-xl">
+                <div class=" w-[350px] pb-3 drop-shadow-xl" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
                     <img class="rounded-md" src="assets/images/product/XBANNER.jpg" alt="">
                 </div>
 
@@ -142,15 +145,70 @@
 
     <!-- End About -->
 
+    <!-- Contact Us -->
 
+    <section class=" w-full h-screen justify-content-between pb-5" id="contact">
+        <div class=" grid lg:grid-cols-2 gap-2 mt-md-5">
+            <div class=" col-span-2 ml-[90px] text-center">
+                <h1 class="text-center mt-14 text-[40px] font-bold">Kontak Kami</h1>
+                <div class=" cols-span-2 inline-flex p-4 space-x-14 text-center">
+                    <div class="text-3xl hover:text-blue-500" title="081xxxxxxx">
+                        <a href="https://wa.me/+628551994060?text=Untuk%20cara%20pemesanannya%20bagaimana%20pak%3F" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
 
+                    </div>
+                    <div class="text-3xl hover:text-blue-500 " title="AzkaPrint">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="text-3xl hover:text-blue-500 " title="@azkaprint">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="text-3xl hover:text-blue-500 " title="azkaprint">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="maps" class="text-center ml-7 mt-[20px] h-[400px] w-full">
+                <div class="p-1 border-2 rounded-lg w-full  drop-shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.583267782129!2d107.63589201431735!3d-6.940304969867321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c44e8d0e6d%3A0x142bdf0fd680156d!2sAzkaprint%20Stempel%2C%20Undangan%20%26%20Percetakan!5e0!3m2!1sid!2sid!4v1656630433075!5m2!1sid!2sid"
+                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full "></iframe>
+                </div>
+            </div>
+            <div class="text-center space-y-5  w-[500px] ml-20 mt-[20px]">
+                <div class="">
+                    <input type="text" name="nama" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Nama Lengkap">
+                </div>
+
+                <div class="">
+                    <input type="text" name="email" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Alamat Email">
+                </div>
+
+                <div class="">
+                    <textarea name="pesan" id="" cols="30" class="border drop-shadow-md w-full pl-2 p-1" rows="10" placeholder="Masukan Pesan"></textarea>
+                </div>
+                <div class="text-end">
+                    <button class="bg-blue-700 hover:bg-blue-900 px-11 py-2 rounded-md text-white" type="submit" name="btn-pesan">Kirim</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact Us -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init({
+            once: true,
+        });
+
         function openmenu() {
             document.getElementById('navbar').classList.toggle('hidden')
         }
     </script>
-
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
