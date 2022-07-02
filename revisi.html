@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,273 +14,220 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- logo icon -->
-    <link rel="icon" href="assets/images/AZKA PRINT.png">
+    <link rel="icon" href="assets/images/AZKAPRINT_STAMP.png">
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<body id="home">
+<body id="home" class="bg-white">
 
-    <!-- Navbar -->
 
-    <nav class="drop-shadow-lg bg-opacity-20 text-opacity-100 fixed top-0 left-0 w-full z-50">
-        <div class=" bg-blue-600 w-full lg:h-14 lg:flex lg:flex-row  text-white z-20  p-3">
-            <div class="flex">
-                <a href="" class="text-decoration-none flex text-3xl lg:ml-20"> Azkaprint</a>
+    <div class="navbar grid grid-cols-2 transition-all bg-blue-600 text-white fixed top-0 z-50">
+        <div class="lg:flex-1 lg:ml-14">
+            <a class="normal-case text-2xl lg:text-4xl cursor-pointer">Azkaprint</a>
+        </div>
+        <label class="swap swap-rotate lg:hidden ml-[100px]">
+  
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+            
+            <!-- hamburger icon -->
+            
+            <svg onclick="openmenu()" class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+        
+            <!-- close icon -->
+            <svg onclick="openmenu()" class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+        </label>
+        <div id="menu" class="lg:flex-none hidden lg:flex mt-4 lg:mt-0 lg:ml-20">
+            <ul class="menu menu-vertical lg:menu-horizontal p-0 lg:w-0 text-xl w-full">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Hero -->
+
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <div data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">
+                <img src="assets/images/AZKAPRINT_STAMP.png" class="max-w-sm rounded-lg -ml-5 lg:ml-0 animate-jump" />
             </div>
-            <div id="toggle" class="absolute -mt-8 ml-[330px] ">
-                <span id="offbar" class="lg:hidden text-2xl">
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-              </span>
-                <span id="onbar" class="lg:hidden hidden text-2xl">
-                <i class="fa-solid fa-xmark" onclick="openmenu()"></i>
-              </span>
-            </div>
-            <div id="navbar" x-transition.duration.500ms x-transition class="hidden transition-all duration-700 ease-in-out lg:flex lg:flex-row py-1 px-3 lg:ml-[500px] lg:-mt-4 mt-3">
-                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
-                    <a class="active:font-bold active:underline text-xl" href="#home">Home</a>
-                </div>
-                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
-                    <a class="active:font-bold active:underline text-xl" href="#product">Product</a>
-                </div>
-                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
-                    <a class="active:font-bold active:underline text-xl" href="#testimoni">Testimonials</a>
-                </div>
-                <div class="px-8  p-5 rounded-md  lg:hover:underline ">
-                    <a class="active:font-bold active:underline text-xl" href="#contact">Contact</a>
-                </div>
+            <div>
+                <h1 class="text-5xl font-bold">Azkaprint</h1>
+                <p class="py-4 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. </p>
+                <button class="btn btn-primary">Get Started</button>
             </div>
         </div>
-    </nav>
-    <!-- -mt-[330px] ml-[330px] -->
-    <!-- End Navbar -->
+    </div>
 
-
-    <!-- Section Hero -->
-
-    <section id="about" class="w-full h-screen bg-cover" style="background-image: url('assets/images/bg-hero.jpg');">
-        <div class="container grid lg:grid-cols-4">
-            <div class="lg:ml-[150px] lg:col-span-2 lg:mt-[230px] mt-[150px]">
-                <div class="lg:pb-8 pb-4 text-center mt-[220px] lg:mt-0">
-                    <h1 class=" lg:text-[60px] text-[40px] font-bold">Azkaprint</h1>
-                    <p class="lg:w-[600px] w-[350px] ml-[40px] lg:ml-0 text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel eligendi soluta amet accusantium odio. Neque delectus praesentium quos, repellat consequuntur dolorum quod ipsum eum modi nesciunt earum porro dolorem distinctio.</p>
-                </div>
-                <a class="bg-blue-500 text-white text-md lg:py-2 lg:px-8 py-2 px-14 mt-2 lg:mt-0 rounded-md cursor-pointer ml-[120px] lg:ml-0">
-                  Jelajahi
-                </a>
-            </div>
-            <div class="lg:ml-[220px] mt-[70px] absolute lg:mt-[200px] w-full h-full" data-aos-delay="150" data-aos="fade-left" data-aos-duration="4000">
-                <img src="assets/images/AZKAPRINT STAMP.png" height="400" class="animate-jump" alt="logo">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Hero -->
-
-    <!-- Jaminan -->
-
-    <section class=" w-full pb-10 mt-20">
-        <div class="grid lg:gap-3 grid-cols-1 lg:grid-cols-3 justify-items-center">
-            <div data-aos="flip-left" data-aos-duration="2000" class="border border-gray-100 hover:skew-y-3 duration-300   drop-shadow-xl text-center w-[350px] h-[400px] p-10">
-                <div class="">
-                    <span class="text-[90px] text-blue-500">
-                      <i class="fa-solid fa-comments"></i>
-                </span>
-                </div>
-                <div class="text-semibold text-2xl pb-5">
-                    <h2>Terjangkau</h2>
-                </div>
-                <div class="text-center">
-                    Anda bisa memesan tanpa harus datang ke kantor kami
-                </div>
-            </div>
-            <div data-aos="flip-up" data-aos-delay="150" data-aos-duration="2000" class="border border-gray-100 hover:skew-y-3 duration-300  drop-shadow-xl w-[350px] text-center h-[400px] p-10">
-                <div class="">
-                    <span class="text-[90px] text-blue-500">
-                      <i class="fa-solid fa-building-shield"></i>
-                </span>
-                </div>
-                <div class="text-semibold text-2xl pb-5">
-                    <h2>Terpercaya</h2>
-                </div>
-                <div class="text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </div>
-            </div>
-            <div data-aos="flip-right" data-aos-delay="300" data-aos-duration="2000" class="border border-gray-100 hover:skew-y-3 duration-300  drop-shadow-xl w-[350px] text-center h-[400px] p-10">
-                <div class="">
-                    <span class="text-[90px] text-blue-500">
-                  <i class="fa-solid fa-pencil"></i>
-                </span>
-                </div>
-                <div class="text-semibold text-2xl pb-5">
-                    <h2>Design Grafis</h2>
-                </div>
-                <div class="text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- End Jaminan -->
+    <!-- End Hero -->
 
 
     <!-- Product -->
 
-    <section id="product" class="w-full h-screen p-5 pt-20 ">
-        <div class="text-center bg-blue-200 w-full">
-            <h1 class="text-4xl font-bold">Product</h1>
-            <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center mt-8 h-full space-y-3">
-                <div class=" w-[350px] pb-3 drop-shadow-xl">
-                    <img class="rounded-md" src="assets/images/product/undangan.jpg" data-aos="flip-left" data-aos-duration="1000" alt="">
+    <div class="w-full h-screen" id="product" class=" lg:mt-0">
+        <h1 class="font-bold text-4xl text-center pt-20 lg:pt-32">Product</h1>
+        <div class="grid lg:grid-cols-3 lg:p-10 mt-10 space-y-3 lg:space-y-0">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Stempel
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
                 </div>
-                <div class=" w-[350px] pb-3 drop-shadow-xl" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                    <img class="rounded-md" src="assets/images/product/STEMPEL BULAT.jpg" alt="">
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Undangan
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
                 </div>
-                <div class=" w-[350px] pb-3 drop-shadow-xl" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
-                    <img class="rounded-md" src="assets/images/product/XBANNER.jpg" alt="">
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Kartu Nama
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
                 </div>
-
             </div>
         </div>
-    </section>
+        <button class="btn btn-wide ml-16 mt-10 lg:mt-5 lg:ml-[510px]">Lebih Banyak</button>
+    </div>
 
     <!-- End Product -->
 
-
     <!-- Testimoni -->
 
-    <div class="p-16 pb-[150px] mt-[300px] lg:mt-0" id="testimoni">
-        <h1 class="pb-4 text-3xl font-bold text-center">Testimonials</h1>
-        <div class="max-w-4xl mx-auto relative" x-data="{
-            activeSlide: 1,
-            slides: [
-            {id: 1, img: 'testi-1' , name: 'Ramdani', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates?' },
-            {id: 2, img: '' , name: 'Rizkan', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates? Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur,' },
-            {id: 3, img: '' , name: 'Ajang', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates? Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur,' },
-            {id: 4, img: '' , name: 'Ramdani', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates? Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur,' },
-            {id: 5, img: '' , name: 'Rizkan', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates? Lorem ipsum dolor sit amet consectetur,' },
-            {id: 6, img: '' , name: 'Ajang', pesan: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptates?' },
-            ],
-            loop(){
-                setInterval(() => {this.activeSlide = this.activeSlide === 6 ? 1 : this.activeSlide + 1 }, 3000 )
-            }
-        }" x-init="loop">
-
-            <!-- Data Loop -->
-            <template x-for="slide in slides" :key="slide.id">
-                <div x-show="activeSlide === slide.id" class=" lg:p-14 lg:h-80 flex border-2 drop-shadow-xl rounded-lg">
-                    <div x-show="slide.id" class="">
-                        <div class="lg:w-16 lg:h-16 h-full">
-                            <img class="rounded-full" src="assets/images/testi-1.jpg " alt="">
-                        </div>
-                        <h2 class="font-bold text-2xl" x-text="slide.name"></h2>
-                        <p x-text="slide.pesan" class="text-base"></p>
+    <div id="testimoni" class="bg-blue-600 bg-opacity-25 w-full pb-28 hidden lg:block border-2 drop-shadow-xl">
+        <div class="opacity-100 lg:pt-[90px] lg:w-[1000px] ml-[100px]">
+            <h1 class="text-4xl font-bold ml-20 text-center">Testimoni</h1>
+            <div class="carousel  pt-20 lg:ml-[100px] ">
+                <div id="pesan1" class="carousel-item lg:p-5 border-2 drop-shadow-xl">
+                    <div class="grid grid-cols-1">
+                        <img src="assets/images/product/STEMPEL BULAT.jpg" width="50" class="rounded-full" alt="">
+                        <h2 class="text-3xl font-bold">Ramdani</h2>
+                        <p class="text-xl w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cum.</p>
                     </div>
                 </div>
-            </template>
-            <!-- Data Loop -->
-
-            <!-- Bottom Button -->
-
-            <div class="absolute w-full flex items-center jusify-center px-4">
-                <template x-for="slide in slides" :key="slide.id">
-                    <button class="flex-1 w-4 h-2 mt-4 mx-2 mb-2 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-slate-600 hover:shadow-lg" 
-                        :class="{
-                            'bg-blue-600' : activeSlide === slide.id,
-                            'bg-slate-300' : activeSlide !== slide.id,
-                        }"
-                        x-on:click="activeSlide = slide.id"
-                    ></button>
-                </template>
+                <div id="pesan2" class="carousel-item p-5 border-2 drop-shadow-xl ml-[40px]">
+                    <div class="grid grid-cols-1">
+                        <img src="assets/images/product/STEMPEL BULAT.jpg" width="50" class="rounded-full" alt="">
+                        <h2 class="text-3xl font-bold">Ramdani</h2>
+                        <p class="text-xl w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cum.</p>
+                    </div>
+                </div>
+                <div id="pesan3" class="carousel-item p-5 border-2 drop-shadow-xl ml-[40px]">
+                    <div class="grid grid-cols-1">
+                        <img src="assets/images/product/STEMPEL BULAT.jpg" width="50" class="rounded-full" alt="">
+                        <h2 class="text-3xl font-bold">Ramdani</h2>
+                        <p class="text-xl w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cum.</p>
+                    </div>
+                </div>
+                <div id="pesan4" class="carousel-item p-5 border-2 drop-shadow-xl ml-[40px]">
+                    <div class="grid grid-cols-1">
+                        <img src="assets/images/product/STEMPEL BULAT.jpg" width="50" class="rounded-full" alt="">
+                        <h2 class="text-3xl font-bold">Ramdani</h2>
+                        <p class="text-xl w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cum.</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- End Bottom Button -->
-
         </div>
     </div>
 
     <!-- End Testimoni -->
 
-    <!-- Contact Us -->
 
-    <section class=" w-full h-screen justify-content-between pb-5" id="contact">
-        <div class=" grid grid-cols-1 lg:grid-cols-2 lg:gap-2 lg:mt-5">
-            <div class=" lg:col-span-2 lg:ml-[90px] text-center">
-                <h1 class="text-center mt-3 lg:mt-14 text-[40px] font-bold">Kontak Kami</h1>
-                <div class=" lg:cols-span-2 inline-flex lg:p-4 space-x-7 lg:space-x-14 text-center">
-                    <div class="lg:text-3xl hover:text-blue-500" title="081xxxxxxx">
-                        <a href="https://wa.me/+628551994060?text=Untuk%20cara%20pemesanannya%20bagaimana%20pak%3F" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
+    <!-- Contact -->
 
-                    </div>
-                    <div class="lg:text-3xl text-xl hover:text-blue-500 " title="AzkaPrint">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="lg:text-3xl text-xl hover:text-blue-500 " title="@azkaprint">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="lg:text-3xl text-xl hover:text-blue-500 " title="azkaprint">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                </div>
+    <div id="contact" class="w-full h-screen mt-[800px] pt-[80px] lg:mt-[20px] lg:pt-[95px]">
+        <h1 class="text-2xl lg:text-4xl font-bold text-center">Kontak Kami</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-7 lg:mt-24">
+            <div class=" maps w-[370px] lg:w-full h-full lg:ml-4 border-2 drop-shadow-md">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.583267782129!2d107.63589201431735!3d-6.940304969867321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c44e8d0e6d%3A0x142bdf0fd680156d!2sAzkaprint%20Stempel%2C%20Undangan%20%26%20Percetakan!5e0!3m2!1sid!2sid!4v1656630433075!5m2!1sid!2sid"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full "></iframe>
             </div>
-            <div id="maps" class="text-center lg:ml-7 p-2 mt-[20px] h-[100px] lg:h-[400px] w-full">
-                <div class="p-1 border-2 rounded-lg w-full  drop-shadow-xl">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.583267782129!2d107.63589201431735!3d-6.940304969867321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c44e8d0e6d%3A0x142bdf0fd680156d!2sAzkaprint%20Stempel%2C%20Undangan%20%26%20Percetakan!5e0!3m2!1sid!2sid!4v1656630433075!5m2!1sid!2sid"
-                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full "></iframe>
-                </div>
-            </div>
-            <div class="text-center items-center space-y-5 w-[380px] p-5 lg:p-0 lg:w-[500px] lg:ml-20 lg:mt-[20px] mt-[350px]">
-                <div class="">
-                    <input type="text" name="nama" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Nama Lengkap">
-                </div>
+            <div class="text-center items-center w-[380px] p-5 lg:p-0 lg:w-[500px]">
+                <form action="" class="space-y-4">
+                    <div class="">
+                        <input type="text" name="nama" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Nama Lengkap">
+                    </div>
 
-                <div class="">
-                    <input type="text" name="email" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Alamat Email">
-                </div>
+                    <div class="">
+                        <input type="text" name="email" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Alamat Email">
+                    </div>
 
-                <div class="">
-                    <textarea name="pesan" id="" cols="30" class="border drop-shadow-md w-full pl-2 p-1" rows="10" placeholder="Masukan Pesan"></textarea>
-                </div>
-                <div class="text-end">
-                    <button class="bg-blue-700 hover:bg-blue-900 px-11 py-2 rounded-md text-white" type="submit" name="btn-pesan">Kirim</button>
-                </div>
+                    <div class="">
+                        <textarea name="pesan" id="" cols="30" class="border drop-shadow-md w-full pl-2 p-1" rows="10" placeholder="Masukan Pesan"></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button class="bg-blue-700 hover:bg-blue-900 px-11 py-2 rounded-md text-white" type="submit" name="btn-pesan">Kirim</button>
+                    </div>
+                </form>
 
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- End Contact Us -->
+    <!-- End Contact -->
 
     <!-- Footer -->
-    <footer class="w-full h-full bg-gray-800 mt-[500px] lg:mt-0">
-        <div class="text-white">
-            <div class="text-center">
-                <h2 class="text-4xl p-5">&copy; Azkaprint</h2>
+
+    <footer class="footer footer-center p-10 bg-blue-900 text-primary-content">
+        <div>
+            <img src="assets/images/AZKAPRINT_STAMP.png" width="80" height="80" alt="Logo">
+            <p class="font-bold">
+                AzkaPrint. <br>Berdiri Sejak Tahun 2019
+            </p>
+            <p class="text-center">Copyright © 2022 </p>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4 text-2xl">
+                <a href="" class="hover:text-yellow-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-yellow-400"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="hover:text-yellow-400"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="hover:text-yellow-400"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
-    <!-- Footer -->
 
+    <!-- End Footer -->
 
-    <!-- Alpine JS -->
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js "></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
-        AOS.init({
-            once: true,
-        });
+        AOS.init();
 
         function openmenu() {
-            document.getElementById('navbar').classList.toggle('hidden')
+            document.getElementById('menu').classList.toggle('hidden')
         }
     </script>
 </body>
