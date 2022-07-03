@@ -8,8 +8,6 @@
     <title>Azkaprint</title>
     <link rel="stylesheet" href="public/css/style.css">
 
-
-
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -70,32 +68,82 @@
 
     <!-- End Hero -->
 
+    <!-- About -->
+
+    <section id="about" class="w-full h-screen block pb-6">
+        <div class="p-20 border-y-2 w-full h-screen">
+            <h1 class="lg:text-4xl text-center">Tentang Kami</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center pt-16">
+                <div class="" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="collapse collapse-arrow">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Lorem
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, reiciendis! Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Lorem,
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, reiciendis! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            ipsum
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit. Beatae, reiciendis! Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            dolor.
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, reiciendis! Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border drop-shadow-md w-[350px] lg:w-[400px] lg:h-[300px] animate-jump" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000">
+                    <img src="assets/images/product-all.png" alt="product">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End About -->
 
     <!-- Product -->
 
-    <div class="w-full h-screen" id="product" class=" lg:mt-0">
-        <h1 class="font-bold text-4xl text-center pt-20 lg:pt-32">Product</h1>
-        <div class="grid lg:grid-cols-3 lg:p-10 mt-10 space-y-3 lg:space-y-0">
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+    <div class="w-full h-screen" id="product" class="">
+        <h1 class="font-bold text-4xl text-center pt-20 lg:pt-[70px]">Product</h1>
+        <div class="grid lg:grid-cols-3 lg:p-5 mt-5 space-y-3 lg:space-y-0">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="flip-left" data-aos-duration="2000">
+                <figure><img src="assets/images//product/STEMPEL BULAT.jpg" alt="stempel" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         Stempel
-                        <div class="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
-                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Stempel</div>
                         <div class="badge badge-outline">Products</div>
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="500">
+                <figure><img src="assets/images/product/undangan.jpg" alt="undangan" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         Undangan
-                        <div class="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
@@ -104,11 +152,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1000">
+                <figure><img src="assets/images/product/XBANNER.jpg" alt="banner/x-banner" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
-                        Kartu Nama
+                        Banner/X-banner
                         <div class="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -119,14 +167,14 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-wide ml-16 mt-10 lg:mt-5 lg:ml-[510px]">Lebih Banyak</button>
+        <a href="produk.html" class="btn btn-wide ml-16 mt-10 lg:mt-5 lg:ml-[510px]">Lebih Banyak</a>
     </div>
 
     <!-- End Product -->
 
     <!-- Testimoni -->
 
-    <div id="testimoni" class="bg-blue-600 bg-opacity-25 w-full pb-28 hidden lg:block border-2 drop-shadow-xl">
+    <div id="testimoni" class="bg-blue-600 bg-opacity-25 w-full h-screen pb-28 hidden lg:block border-2 drop-shadow-xl lg:mt-[160px]">
         <div class="opacity-100 lg:pt-[90px] lg:w-[1000px] ml-[100px]">
             <h1 class="text-4xl font-bold ml-20 text-center">Testimoni</h1>
             <div class="carousel  pt-20 lg:ml-[100px] ">
@@ -167,14 +215,14 @@
 
     <!-- Contact -->
 
-    <div id="contact" class="w-full h-screen mt-[800px] pt-[80px] lg:mt-[20px] lg:pt-[95px]">
+    <div id="contact" class="w-full h-screen mt-[800px] pt-[600px] lg:mt-[20px] lg:pt-[95px] lg:pb-24">
         <h1 class="text-2xl lg:text-4xl font-bold text-center">Kontak Kami</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-7 lg:mt-24">
-            <div class=" maps w-[370px] lg:w-full h-full lg:ml-4 border-2 drop-shadow-md">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-7 lg:mt-14">
+            <div class=" maps w-[370px] lg:w-full h-full lg:ml-4 border-2 drop-shadow-md" data-aos="fade-up" data-aos-duration="1600">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.583267782129!2d107.63589201431735!3d-6.940304969867321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c44e8d0e6d%3A0x142bdf0fd680156d!2sAzkaprint%20Stempel%2C%20Undangan%20%26%20Percetakan!5e0!3m2!1sid!2sid!4v1656630433075!5m2!1sid!2sid"
                     width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full "></iframe>
             </div>
-            <div class="text-center items-center w-[380px] p-5 lg:p-0 mt-[30px] lg:mt-0 lg:w-[500px]">
+            <div class="text-center items-center w-[380px] p-5 lg:p-0 mt-[30px] lg:mt-0 lg:w-[500px]" data-aos="fade-down" data-aos-duration="1600" data-aos-delay="700">
                 <form action="" class="space-y-4">
                     <div class="">
                         <input type="text" name="nama" class="border drop-shadow-md w-full pl-2 p-1" placeholder="Nama Lengkap">
@@ -200,7 +248,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer footer-center p-10 bg-blue-900 text-primary-content mt-[500px] lg:mt-0">
+    <footer class="footer footer-center p-10 bg-blue-900 text-primary-content mt-[1000px] lg:mt-[100px]">
         <div>
             <img src="assets/images/AZKAPRINT_STAMP.png" width="80" height="80" alt="Logo">
             <p class="font-bold">
